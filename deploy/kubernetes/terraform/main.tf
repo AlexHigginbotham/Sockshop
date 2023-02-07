@@ -110,6 +110,7 @@ resource "aws_instance" "ci-sockshop-k8s-node" {
       "sudo sysctl -w vm.max_map_count=262144"
     ]
   }
+  monitoring = true
 }
 
 resource "aws_elb" "ci-sockshop-k8s-elb" {
